@@ -475,6 +475,8 @@
 					$("#warn_home").empty().append('<a href="#jobs_taker"><img src="visuels/Alerte_course_flat.png" width="100%"/></a>');
 					document.getElementById("play").play();
 					document.getElementById("play_home").play();
+					//navigator.notification.beep(2);
+					navigator.notification.vibrate(3600);
 				}
 				else
 				{
@@ -491,6 +493,8 @@
 				{
 					$("#warn_cmd").empty().append('<img src="visuels/Alerte_course_flat.png" width="100%"/>');
 					document.getElementById("play_cmd").play();
+					//navigator.notification.beep(2);
+					navigator.notification.vibrate(3600);
 				}
 				else
 				{
@@ -1309,8 +1313,8 @@
 					<a href="cmd.php" data-role="button" data-icon="star" data-transition="slide" data-theme="b">Mes commandes</a>
 					<a href="history.php" data-role="button" data-icon="search" data-transition="slide" data-theme="a">Historique</a>
                     -->
-               </div>
-               <div class="cleaner"></div>
+                </div>
+                <div class="cleaner"></div>
                 <a href="#secureDialogCmd" data-rel="popup" data-position-to="window" data-role="button" class="secure-bt" data-theme="b" data-icon="alert">Bouton d&rsquo;urgence</a>
                 <div data-role="popup" data-theme="a" id="secureDialogCmd" data-dismissible="false" data-overlay-theme="b">
                     <div data-theme="a" data-role="header">
